@@ -9,20 +9,20 @@ How it works
 Register your info and get your token:
 
 ```bash
-    $ curl --data "email=<your-email>&name=<your-name>&url=<your-url-to-redirect>" http://kakaomailer.herokuapp.com/register
+    $ curl --data "email=<your-email>&name=<your-name>&url=<your-url-to-redirect>" http://kakaomailer2.herokuapp.com/register
 Token: 780a8a9b-dc2d-4a58-83ar-4deefe446dee
 ```
 
 Test (optional):
 
 ```bash
-curl --data "email=<your_email>&name=<your_name>&message=<your_message>&subject=<your_subject>" http://kakaomailer.herokuapp.com/user/<token>
+curl --data "email=<your_email>&name=<your_name>&message=<your_message>&subject=<your_subject>" http://kakaomailer2.herokuapp.com/user/<token>
 ```
 
 The form will be sent through AJAX... soon more details about how...
 
 ```html
-<form action="https://kakaomailer.herokuapp.com/user">
+<form action="https://kakaomailer2.herokuapp.com/user">
   Email: <input type="text" name="name"><br>
   Name: <input type="text" name="email"><br>
   Subject: <input type="text" name="subject"><br>
@@ -38,7 +38,7 @@ Deploying
 This app was built to be deployed to Heroku
 
 ```bash
-	$ git clone git@github.com:g3ortega/kakaomailer.git
+	$ git clone https://github.com/rubyni/kakaomailer.git
 	$ heroku create
 	$ heroku config:set SENDGRID_API_KEY=<key>
 	$ heroku config:set REDIRECT_URL=<URl you want to redirect from root path >
