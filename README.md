@@ -10,7 +10,7 @@ Register your info and get your token:
 
 ```bash
     $ curl --data "email=<your-email>&name=<your-name>&url=<your-url-to-redirect>" http://kakaomailer.herokuapp.com/register
-Token: 780a8a9b-dc2d-4a58-83ar-4deefe446dee 
+Token: 780a8a9b-dc2d-4a58-83ar-4deefe446dee
 ```
 
 Test (optional):
@@ -40,9 +40,8 @@ This app was built to be deployed to Heroku
 ```bash
 	$ git clone git@github.com:g3ortega/kakaomailer.git
 	$ heroku create
-	$ heroku config:set MANDRILL_APIKEY=<key>
+	$ heroku config:set SENDGRID_API_KEY=<key>
 	$ heroku config:set REDIRECT_URL=<URl you want to redirect from root path >
 	$ heroku addons:add heroku-postgresql:dev
 	$ heroku ps:scale web=1
 ```
-

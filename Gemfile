@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.5.0'
 
 gem 'sinatra'
-gem 'mandrill-api'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
 gem 'uuid'
